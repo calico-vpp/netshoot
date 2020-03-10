@@ -56,7 +56,7 @@ RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
 RUN wget https://github.com/bcicen/ctop/releases/download/v0.7.1/ctop-0.7.1-linux-amd64 -O /usr/local/bin/ctop && chmod +x /usr/local/bin/ctop
 
 # Installing calicoctl
-ARG CALICOCTL_VERSION=v3.3.1
+ARG CALICOCTL_VERSION=v3.9.1
 RUN wget https://github.com/projectcalico/calicoctl/releases/download/${CALICOCTL_VERSION}/calicoctl && chmod +x calicoctl && mv calicoctl /usr/local/bin
 
 # Settings
